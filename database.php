@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'db',
-			'database'  => 'notejam',
-			'username'  => 'admin',
-			'password'  => 'Database_password',
+			'host'      => env('DB_HOST', 'db'),
+			'database'  => env('DB_DATABASE', 'notejam'),
+			'username'  => env('DB_USERNAME', 'admin'),
+			'password'  => env('DB_PASSWORD', 'Database_password'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
